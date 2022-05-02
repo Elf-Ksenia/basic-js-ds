@@ -17,12 +17,12 @@ class Stack {
     this.data = [];
   }
   push(element) {
-    this.push(element);
-    return this.data;
+    this.data.push(element);
+    return this.data
   }
 
   pop() {
-    return this.pop(element);
+    return this.data.pop();
   }
 
   peek() {
@@ -36,3 +36,4 @@ const stack = new Stack();
 module.exports = {
   Stack
 };
+
