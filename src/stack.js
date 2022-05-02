@@ -4,7 +4,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * Implement the Stack with a given interface via array.
  *
  * @example
- * const stack = new Stack();
+ * 
  *
  * stack.push(1); // adds the element to the stack
  * stack.peek(); // returns the peek, but doesn't delete it, returns 1
@@ -30,6 +30,8 @@ class Stack {
     return peek;
   }
 }
+
+const stack = new Stack();
 
 module.exports = {
   Stack
