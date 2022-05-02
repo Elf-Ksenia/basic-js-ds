@@ -49,7 +49,7 @@ class Queue {
     this.first = this.first.next;
   }
 }
-const queue = new Queue()
+/*const queue = new Queue()
 module.exports = {
   Queue
-};
+};*/
