@@ -15,18 +15,23 @@ const { NotImplementedError } = require('../extensions/index.js');
  * the output should be [1, 2, 4, 5]
  *
  * Singly - linked lists are already defined using interface
- * class ListNode {
- *   constructor(x) {
- *     this.value = x;
- *     this.next = null;
- *   }
- * }
  */
-function removeKFromList(/* l, k */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+class ListNode {
+  constructor(x) {
+    this.value = x;
+    this.next = null;
+  }
+}
+
+let l = [3, 1, 2, 3, 4, 5]
+let k = 3
+
+function removeKFromList(l, k) {
+  return l.filter(arrElement => arrElement !== k);
 }
 
 module.exports = {
   removeKFromList
 };
+
+console.log(removeKFromList(l, k))
